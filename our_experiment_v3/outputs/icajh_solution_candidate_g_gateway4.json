@@ -1,0 +1,200 @@
+{
+  "objective_mlu": 1.0,
+  "wapl": 23.0,
+  "waypoints": [
+    {
+      "demand_index": 0,
+      "src": "11",
+      "dst": "4",
+      "segments": [
+        [
+          "11",
+          "1"
+        ],
+        [
+          "1",
+          "4"
+        ]
+      ],
+      "waypoints": [
+        "1"
+      ]
+    },
+    {
+      "demand_index": 1,
+      "src": "12",
+      "dst": "4",
+      "segments": [
+        [
+          "12",
+          "4"
+        ]
+      ],
+      "waypoints": []
+    },
+    {
+      "demand_index": 2,
+      "src": "13",
+      "dst": "4",
+      "segments": [
+        [
+          "13",
+          "4"
+        ]
+      ],
+      "waypoints": []
+    },
+    {
+      "demand_index": 3,
+      "src": "14",
+      "dst": "4",
+      "segments": [
+        [
+          "14",
+          "3"
+        ],
+        [
+          "3",
+          "4"
+        ]
+      ],
+      "waypoints": [
+        "3"
+      ]
+    }
+  ],
+  "weights": [
+    {
+      "src": "0",
+      "dst": "1",
+      "weight": 1.0
+    },
+    {
+      "src": "1",
+      "dst": "0",
+      "weight": 1.0
+    },
+    {
+      "src": "1",
+      "dst": "2",
+      "weight": 1.0
+    },
+    {
+      "src": "2",
+      "dst": "1",
+      "weight": 1.0
+    },
+    {
+      "src": "2",
+      "dst": "3",
+      "weight": 11.0
+    },
+    {
+      "src": "3",
+      "dst": "2",
+      "weight": 2.0
+    },
+    {
+      "src": "0",
+      "dst": "4",
+      "weight": 19.0
+    },
+    {
+      "src": "1",
+      "dst": "4",
+      "weight": 18.0
+    },
+    {
+      "src": "2",
+      "dst": "4",
+      "weight": 17.0
+    },
+    {
+      "src": "3",
+      "dst": "4",
+      "weight": 18.0
+    },
+    {
+      "src": "4",
+      "dst": "0",
+      "weight": 8.0
+    },
+    {
+      "src": "4",
+      "dst": "1",
+      "weight": 12.0
+    },
+    {
+      "src": "4",
+      "dst": "2",
+      "weight": 11.0
+    },
+    {
+      "src": "4",
+      "dst": "3",
+      "weight": 7.0
+    },
+    {
+      "src": "11",
+      "dst": "0",
+      "weight": 1.0
+    },
+    {
+      "src": "12",
+      "dst": "0",
+      "weight": 1.0
+    },
+    {
+      "src": "13",
+      "dst": "0",
+      "weight": 1.0
+    },
+    {
+      "src": "14",
+      "dst": "0",
+      "weight": 1.0
+    },
+    {
+      "src": "0",
+      "dst": "11",
+      "weight": 1.0
+    },
+    {
+      "src": "0",
+      "dst": "12",
+      "weight": 3.0
+    },
+    {
+      "src": "0",
+      "dst": "13",
+      "weight": 1.0
+    },
+    {
+      "src": "0",
+      "dst": "14",
+      "weight": 1.0
+    }
+  ],
+  "scenario": "v3_final_13n_4d_candidate_G",
+  "algorithm": "ICAJointHeuristic",
+  "input_file": "our_experiment_v3/inputs/icajh_te_core_candidate_g_gateway4.json",
+  "metadata": {
+    "generated_by": "ICA-JH offline optimizer on the 9-node TE-core Candidate G scenario",
+    "te_scope": "ICA-JH optimizes demands 11->4, 12->4, 13->4, 14->4 with gateway 4 as TE target",
+    "receivers": "nodes 21-24 are measurement endpoints behind gateway 4 and are not part of TE optimization",
+    "baseline_comparison": "ECMP/weights-only baseline uses the same V3 topology and measurement flows",
+    "ecmp_mlu_uniform_costs": 4.0,
+    "icajh_objective_mlu": 1.0,
+    "measurement_parameters": {
+      "TIME": 120,
+      "NSTREAMS": 8,
+      "flows": [
+        "11->21",
+        "12->22",
+        "13->23",
+        "14->24"
+      ]
+    },
+    "candidate_search_artifacts": "our_experiment_v3_candidates/"
+  }
+}

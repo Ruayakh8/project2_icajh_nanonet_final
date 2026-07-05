@@ -1,0 +1,289 @@
+{
+  "scenario": "v3_final_13n_4d_candidate_G",
+  "description": "V3 measurement scenario: Candidate G TE core plus receiver nodes 21-24 behind gateway 4. Routing comes from the offline ICA-JH solution; Nanonet only applies routing and measures traffic.",
+  "nodes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "11",
+    "12",
+    "13",
+    "14",
+    "21",
+    "22",
+    "23",
+    "24"
+  ],
+  "experiment_parameters": {
+    "TIME": 120,
+    "NSTREAMS": 8
+  },
+  "te_demands": [
+    {
+      "src": "11",
+      "dst": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "12",
+      "dst": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "13",
+      "dst": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "14",
+      "dst": "4",
+      "volume": 1.0
+    }
+  ],
+  "measurement_flows": [
+    {
+      "src": "11",
+      "dst": "21",
+      "gateway": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "12",
+      "dst": "22",
+      "gateway": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "13",
+      "dst": "23",
+      "gateway": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "14",
+      "dst": "24",
+      "gateway": "4",
+      "volume": 1.0
+    }
+  ],
+  "links": [
+    {
+      "src": "0",
+      "dst": "1",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "1",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "1",
+      "dst": "2",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "2",
+      "dst": "1",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "2",
+      "dst": "3",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "3",
+      "dst": "2",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "1",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "2",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "3",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "4",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "4",
+      "dst": "1",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "4",
+      "dst": "2",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "4",
+      "dst": "3",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "11",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "12",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "13",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "14",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "11",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "12",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "13",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "14",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "4",
+      "dst": "21",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "21",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "4",
+      "dst": "22",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "22",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "4",
+      "dst": "23",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "23",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "4",
+      "dst": "24",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "24",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    }
+  ],
+  "notes": {
+    "cost_ecmp": "Used for the ECMP baseline topology (uniform 1000).",
+    "bw": "Used by Nanonet as link bandwidth.",
+    "ica_capacity": "Normalized capacity used by the offline ICA-JH optimization (TE core only).",
+    "receiver_links": "Links 4<->21..24 are measurement-only, high-capacity, non-bottleneck."
+  }
+}

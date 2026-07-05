@@ -1,0 +1,209 @@
+{
+  "scenario": "v3_te_core_9n_4d_candidate_G",
+  "description": "V3 TE-core scenario (Candidate G): 9-node core, equal uplink capacities, uniform ECMP costs. Input for the offline ICA-JH run.",
+  "nodes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "11",
+    "12",
+    "13",
+    "14"
+  ],
+  "experiment_parameters": {
+    "TIME": 120,
+    "NSTREAMS": 8
+  },
+  "demands": [
+    {
+      "src": "11",
+      "dst": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "12",
+      "dst": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "13",
+      "dst": "4",
+      "volume": 1.0
+    },
+    {
+      "src": "14",
+      "dst": "4",
+      "volume": 1.0
+    }
+  ],
+  "links": [
+    {
+      "src": "0",
+      "dst": "1",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "1",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "1",
+      "dst": "2",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "2",
+      "dst": "1",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "2",
+      "dst": "3",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "3",
+      "dst": "2",
+      "cost_ecmp": 1000,
+      "bw": 4000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "1",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "2",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "3",
+      "dst": "4",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "4",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "4",
+      "dst": "1",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "4",
+      "dst": "2",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "4",
+      "dst": "3",
+      "cost_ecmp": 1000,
+      "bw": 12000,
+      "ica_capacity": 1.0
+    },
+    {
+      "src": "11",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "12",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "13",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "14",
+      "dst": "0",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "11",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "12",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "13",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    },
+    {
+      "src": "0",
+      "dst": "14",
+      "cost_ecmp": 1000,
+      "bw": 1000000,
+      "ica_capacity": 1000.0
+    }
+  ],
+  "notes": {
+    "cost_ecmp": "Used for the ECMP baseline topology.",
+    "bw": "Used by Nanonet as link bandwidth.",
+    "ica_capacity": "Normalized capacity used by ICA-JH optimization.",
+    "stress_links": [
+      "0->4",
+      "1->4",
+      "2->4",
+      "3->4"
+    ],
+    "stress_bw": 12000
+  }
+}
