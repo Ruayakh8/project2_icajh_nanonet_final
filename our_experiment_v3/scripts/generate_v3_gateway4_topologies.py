@@ -178,10 +178,10 @@ def generate():
     print("  V3_gateway4_baseline_ecmp.topo.py")
     print("  V3_gateway4_icajh_srv6.topo.py")
     print("Build (from the nanonet directory):")
-    print("  python3 build.py ../TE_SR_experiments_2021/V3_gateway4_baseline_ecmp.topo.py "
-          "V3_gateway4_baseline_ecmp ../TE_SR_experiments_2021")
-    print("  python3 build.py ../TE_SR_experiments_2021/V3_gateway4_icajh_srv6.topo.py "
-          "V3_gateway4_icajh_srv6 ../TE_SR_experiments_2021")
+    print("  python3 build.py ../project2_icajh_nanonet_final/V3_gateway4_baseline_ecmp.topo.py "
+          "V3_gateway4_baseline_ecmp ../project2_icajh_nanonet_final")
+    print("  python3 build.py ../project2_icajh_nanonet_final/V3_gateway4_icajh_srv6.topo.py "
+          "V3_gateway4_icajh_srv6 ../project2_icajh_nanonet_final")
 
 
 if __name__ == "__main__":

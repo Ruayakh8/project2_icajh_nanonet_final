@@ -176,6 +176,33 @@ Improvement: 28.1239 / 10.0079 ≈ **2.81x** total throughput.
 
 Exact throughput values may vary slightly depending on the machine/VM load.
 
+## Evaluation and plotting
+
+The raw flow files are included under `our_experiment_v3/results/`.
+
+Create the batch CSV (`our_experiment_v3/results/batch_result_v3.csv`):
+
+```
+python3 our_experiment_v3/scripts/create_v3_batch_csv.py
+```
+
+Generate the boxplot and statistics
+(`our_experiment_v3/results/plots/v3_total_throughput_boxplot.{png,pdf}`):
+
+```
+python3 our_experiment_v3/scripts/gen_boxplot_v3.py
+```
+
+The CSV format is batch-style (semicolon-delimited, one row per run and
+topology) and supports future repeated runs. The repository currently
+contains one valid run per variant. For statistical boxplots, run repeated
+measurements and store them under
+`our_experiment_v3/results/repeated/<variant>/run_XX/`; the CSV and plot
+scripts pick them up automatically.
+
+Plotting requires `matplotlib`; `seaborn` is used if available
+(`sudo apt install python3-seaborn` or `pip install seaborn`).
+
 ## Compile and configure the experiments
 
 ### Generate `.topo.py` files
